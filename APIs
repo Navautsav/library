@@ -1,0 +1,20 @@
+URL: http://localhost:3333/books
+Method:GET
+Action: Fetches all the books available in the system.
+
+URL: http://localhost:3000/books/search/:title
+Method:GET
+Replace :title with the book title you're searching for.
+Action: Searches for a book by its title.
+
+URL: http://localhost:3333/books
+Method:POST
+Action: Adds a new book to the library.
+
+URL: http://localhost:3333/books/request
+Method:POST
+Action: Student requests a book. If the book is available, they can check it out. If not, they are added to the queue.
+
+URL: http://localhost:3333/books/process-request
+Method:POST
+Action: Processes the next book request from the queue.
